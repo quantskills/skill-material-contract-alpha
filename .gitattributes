@@ -1,0 +1,22 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Python sources
+*.py text diff=python
+
+# Markdown
+*.md text
+
+# JSON
+*.json text
+
+# YAML
+*.yaml text
+
+# Parquet (binary)
+*.parquet binary
+
+# Images
+*.png binary
+*.jpg binary
+*.svg text

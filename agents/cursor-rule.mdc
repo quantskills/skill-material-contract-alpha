@@ -1,0 +1,27 @@
+---
+description: A-share material contract alpha factor skill
+globs: ["**/skill-material-contract-alpha/**"]
+---
+
+# Material Contract Alpha (Cursor Adapter)
+
+## Setup
+- Set env vars: `PANDA_DATA_USERNAME`, `PANDA_DATA_PASSWORD`, `PANDA_DATA_BASE_URL`
+- Python 3.10+ with pandas, numpy, panda_data>=0.0.12
+
+## Commands
+- `python scripts/factor.py` — compute factor
+- `python scripts/validate.py` — 3-layer validation
+- `python scripts/backtest.py` — full backtest metrics
+- `python scripts/build_release.py` — release packaging
+
+## Output Schema
+```
+trade_date, asset_type, ts_code, factor_id, factor_name,
+factor_value, score, rank, signal, confidence,
+data_version, update_time
+```
+
+## Factor Logic
+`factor_value = log1p(sum(max_contract_amount))` per stock.
+score 0-100, rank cross-sectional, signal based on score thresholds.

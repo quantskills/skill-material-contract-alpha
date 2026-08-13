@@ -1,0 +1,34 @@
+{
+  "skill": {
+    "factor_id": "A10",
+    "factor_name": "material-contract-alpha",
+    "factor_type": "single",
+    "asset_class": "stock",
+    "formula": "log1p(sum(max(max_contract_amount, min_contract_amount)))",
+    "trading_direction": "long",
+    "signal_type": "buy/sell/hold",
+    "data_source": "PandaData",
+    "description": "A-share material contract alpha factor: cross-sectional ranking based on contract amount log-transformed sum."
+  },
+  "validation": {
+    "layers": 3,
+    "layer1": "future_function_check",
+    "layer2": "overfitting_check",
+    "layer3": "out_of_sample_validation",
+    "min_coverage_stocks": 5,
+    "min_factor_std": 0.01
+  },
+  "production": {
+    "output_format": "parquet",
+    "output_path": "生产产物/数据库.parquet",
+    "data_version": "pandadata-material-contract-alpha-v1",
+    "update_frequency": "daily",
+    "retention_days": 365,
+    "backup_days": 7
+  },
+  "dependencies": {
+    "panda_data": ">=0.0.12",
+    "numpy": "*",
+    "pandas": "*"
+  }
+}
