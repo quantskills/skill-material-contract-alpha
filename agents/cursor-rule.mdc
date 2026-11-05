@@ -7,7 +7,7 @@ globs: ["**/skill-material-contract-alpha/**"]
 
 ## Setup
 - Set env vars: `PANDA_DATA_USERNAME`, `PANDA_DATA_PASSWORD`, `PANDA_DATA_BASE_URL`
-- Python 3.10+ with pandas, numpy, panda_data>=0.0.12
+- Python 3.10+ with pandas, numpy, panda_data==1.0.6
 
 ## Commands
 - `python scripts/factor.py` — compute factor

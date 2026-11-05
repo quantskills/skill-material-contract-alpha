@@ -99,3 +99,6 @@ material-contract-alpha/
 ## Disclaimer
 
 This skill produces quantitative research support based on public data. Nothing here constitutes investment advice.
+
+
+Pandadata compatibility maintenance: [abgyjaguo](https://github.com/abgyjaguo). Existing authorship is retained.

@@ -98,3 +98,6 @@ material-contract-alpha/
 ## 免责声明
 
 本技能输出为基于公开数据的量化研究支持，不构成任何投资建议。
+
+
+Pandadata 兼容维护：[abgyjaguo](https://github.com/abgyjaguo)，保留原项目作者署名。
