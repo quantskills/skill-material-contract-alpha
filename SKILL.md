@@ -114,5 +114,9 @@ python scripts/build_release.py
 - Generates `生产产物/发布验收报告.md` and `生产产物/发布验收报告.json` with real multi-day historical backtest stats
 
 ## Dependencies
-- panda_data >= 0.0.12
+- panda_data==1.0.6
 - numpy, pandas
+
+## Pandadata compatibility
+
+[Pandadata 1.0.6 compatibility](references/pandadata-compatibility.md) — exact SDK baseline, validation scope, and shared guidance for all supported agent runtimes.
